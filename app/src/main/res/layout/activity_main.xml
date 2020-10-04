@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="top|center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Add Your Product"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="101dp" />
+
+            <EditText
+                android:id="@+id/txtID"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:ems="3"
+                android:hint="Enter the Id"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:ems="10"
+                android:hint="Product Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtquantity"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:ems="10"
+                android:hint="Quantity/KG"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtprice"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtDiscription"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:ems="10"
+                android:hint="Discription"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INSERT"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DELETE"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
